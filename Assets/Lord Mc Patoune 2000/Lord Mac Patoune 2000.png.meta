@@ -302,10 +302,10 @@ TextureImporter:
       name: Lord Mac Patoune 2000_9
       rect:
         serializedVersion: 2
-        x: 148
-        y: 41
-        width: 42
-        height: 30
+        x: 308
+        y: 102
+        width: 43
+        height: 39
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,10 +323,10 @@ TextureImporter:
       name: Lord Mac Patoune 2000_10
       rect:
         serializedVersion: 2
-        x: 190
-        y: 56
-        width: 17
-        height: 10
+        x: 352
+        y: 101
+        width: 43
+        height: 38
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

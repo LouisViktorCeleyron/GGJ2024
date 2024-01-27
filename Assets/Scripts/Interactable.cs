@@ -17,6 +17,10 @@ public class Interactable : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if(!enabled)
+        {
+            return;
+        }
         if(CheckCondidition())
         {
             onInteraction.Invoke();        
