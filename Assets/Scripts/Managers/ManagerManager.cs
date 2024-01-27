@@ -11,6 +11,11 @@ public class ManagerManager : MonoBehaviour
         if(mmInstance == null)
         {
             mmInstance = this;
+
+            foreach (var man in managers)
+            {
+                man.ManagerAwake();
+            }
         }
         else
         {
