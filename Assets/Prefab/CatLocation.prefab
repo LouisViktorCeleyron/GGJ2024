@@ -25,7 +25,7 @@ Transform:
   m_GameObject: {fileID: 8114098717586778453}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: 4, z: 0}
+  m_LocalPosition: {x: -55, y: -34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45,6 +45,8 @@ GameObject:
   - component: {fileID: 5004194804764640204}
   - component: {fileID: 4467593202208035437}
   - component: {fileID: 4504740353932431140}
+  - component: {fileID: 516239509830765360}
+  - component: {fileID: 3977473385295798085}
   m_Layer: 0
   m_Name: CatLocation
   m_TagString: Untagged
@@ -108,8 +110,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 94d5de25ae907c34cbed4137f22ac32b, type: 3}
+  m_SortingOrder: 50
+  m_Sprite: {fileID: 21300000, guid: f2b40080e91aab243b019d86d3c8c379, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -159,6 +161,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  conditions:
+  - PorteOuverte
 --- !u!114 &5004194804764640204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,18 +208,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.11915207, y: 0.17872238}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 16, y: 8}
+    oldSize: {x: 34, y: 40}
     newSize: {x: 0.16, y: 0.08}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 16, y: 8}
+  m_Size: {x: 29.29, y: 39.57438}
   m_EdgeRadius: 0
 --- !u!114 &4504740353932431140
 MonoBehaviour:
@@ -229,7 +233,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3417a5a70cd61db4396ef209ecf7748c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animToPlay: 0
   endOfAnimEvent:
     m_PersistentCalls:
-      m_Calls: []
-  animToPlay: 0
+      m_Calls:
+      - m_Target: {fileID: 516239509830765360}
+        m_TargetAssemblyTypeName: AnimObject, Assembly-CSharp
+        m_MethodName: LaunchAnimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &516239509830765360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9165457220330282943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12cc784452f46b14e8a7430e1b1d9ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 3977473385295798085}
+  endOfAnimEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 9165457220330282943}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: MoneyManager, Assembly-CSharp
+        m_MethodName: LoseMoney
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!111 &3977473385295798085
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9165457220330282943}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 9d106916379de3443a949b74d4a693cf, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 9d106916379de3443a949b74d4a693cf, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0

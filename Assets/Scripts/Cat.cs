@@ -38,6 +38,6 @@ public enum CatAnimation
     push,
     scratch,
     pee,
-    jump,
+    pushLeft,
     roll
 }

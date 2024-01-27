@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3417a5a70cd61db4396ef209ecf7748c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animToPlay: 0
+  animToPlay: 3
   endOfAnimEvent:
     m_PersistentCalls:
       m_Calls:
