@@ -16,7 +16,7 @@ public class SoundManager : MonoBehaviour
 
     public void LaunchMusic(AudioClip music)
     {
-        sfxSource.clip = music;
-        sfxSource.Play();
+        musicSource.clip = music;
+        musicSource.Play();
     }
 }
