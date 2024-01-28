@@ -5,13 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class Altinteraction : MonoBehaviour
 {
-   public void ActivateAllChildEffect()
-   {
-
-   }
-
-    public void ChangeScene()
+    public List<ParticleSystem> systems;
+    public void ActivateAllChildEffect()
     {
-        SceneManager.LoadScene(1);
+        foreach (var sys in systems)
+        {
+            sys.Play();
+        }
+    }
+
+    public void ChangeScene(int index)
+    {
+        SceneManager.LoadScene(index);
     }
 }
