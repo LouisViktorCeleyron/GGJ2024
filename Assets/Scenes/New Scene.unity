@@ -513,8 +513,8 @@ MonoBehaviour:
   m_text: "cod\xE9 par Louis, mis en musique par Hugues et Yoan, dessin\xE9 par Emma
     et Lau"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 864841e4fbd08634f9940799cbdc44dd, type: 2}
-  m_sharedMaterial: {fileID: -6518722287821121763, guid: 864841e4fbd08634f9940799cbdc44dd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d07a0b02493cf094f995849435437281, type: 2}
+  m_sharedMaterial: {fileID: -6518722287821121763, guid: d07a0b02493cf094f995849435437281, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -538,8 +538,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 5.75
+  m_fontSizeBase: 5.75
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1385,6 +1385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e231a30db582e3468657d8adab189d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  systems: []
 --- !u!114 &1221639978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1432,11 +1433,11 @@ MonoBehaviour:
       - m_Target: {fileID: 1221639977}
         m_TargetAssemblyTypeName: Altinteraction, Assembly-CSharp
         m_MethodName: ChangeScene
-        m_Mode: 1
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1737,8 +1738,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 5.4
+  m_fontSizeBase: 5.4
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

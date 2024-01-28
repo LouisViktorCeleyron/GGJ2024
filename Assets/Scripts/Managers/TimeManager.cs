@@ -9,11 +9,12 @@ public class TimeManager : MonoBehaviour
 
     [SerializeField]
     private TextMeshProUGUI timerTextGUI;
-
+    private SoundManager soundManager;
     public float timer;
-
+    private bool doOnce;
     private void Start()
     {
+        soundManager = ManagerManager.GetManager<SoundManager>();   
         timer = 30.00f;
     }
 
@@ -35,7 +36,15 @@ public class TimeManager : MonoBehaviour
         timerTextGUI.text = timer.ToString("00");
         if(timer<=0.0)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
+        }
+        if(timer<=10)
+        {
+            if(!doOnce)
+            {
+                doOnce = true;
+                soundManager.ChangeSongByTime();
+            }
         }
     }
 
