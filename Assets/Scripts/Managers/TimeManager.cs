@@ -14,7 +14,7 @@ public class TimeManager : MonoBehaviour
 
     private void Start()
     {
-        timer = 10.00f;
+        timer = 30.00f;
     }
 
     private void Update()
