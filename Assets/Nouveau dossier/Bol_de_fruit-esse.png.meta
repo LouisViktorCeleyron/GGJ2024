@@ -302,10 +302,10 @@ TextureImporter:
       name: Bol_de_fruit-esse_9
       rect:
         serializedVersion: 2
-        x: 72
-        y: 7
-        width: 32
-        height: 33
+        x: 71
+        y: 8
+        width: 20
+        height: 23
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -323,6 +323,27 @@ TextureImporter:
       name: Bol_de_fruit-esse_10
       rect:
         serializedVersion: 2
+        x: 112
+        y: 4
+        width: 20
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0826d3926ee741b4fb2e95a0ecd47354
+      internalID: 1160250131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bol_de_fruit-esse_11
+      rect:
+        serializedVersion: 2
         x: 39
         y: 11
         width: 18
@@ -334,8 +355,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0826d3926ee741b4fb2e95a0ecd47354
-      internalID: 1160250131
+      spriteID: b96ccfcad3b6060439a20e10cbc43869
+      internalID: 337604713
       vertices: []
       indices: 
       edges: []
@@ -354,6 +375,7 @@ TextureImporter:
       Bol_de_fruit-esse_0: 1125738505
       Bol_de_fruit-esse_1: -1125914046
       Bol_de_fruit-esse_10: 1160250131
+      Bol_de_fruit-esse_11: 337604713
       Bol_de_fruit-esse_2: 221978038
       Bol_de_fruit-esse_3: -178615058
       Bol_de_fruit-esse_4: 1579241432

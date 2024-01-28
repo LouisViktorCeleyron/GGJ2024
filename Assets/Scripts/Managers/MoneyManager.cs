@@ -17,6 +17,11 @@ public class MoneyManager : Manager
         UpdateText();
     }
 
+    public string GetMoney() 
+    {
+        return money.ToString("");
+    }
+
     private void UpdateText()
     {
         var ratio = (float)money / 900.00f;

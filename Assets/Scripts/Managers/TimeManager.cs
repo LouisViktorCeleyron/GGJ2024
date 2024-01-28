@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TimeManager : MonoBehaviour
 {
@@ -13,7 +14,7 @@ public class TimeManager : MonoBehaviour
 
     private void Start()
     {
-        timer = 30.00f;
+        timer = 10.00f;
     }
 
     private void Update()
@@ -31,8 +32,11 @@ public class TimeManager : MonoBehaviour
         timer -= Time.deltaTime;
         timer = Mathf.Clamp(timer,0.0f,180.0f);
 
-        timerTextGUI.text = timer.ToString("00.00");
-
+        timerTextGUI.text = timer.ToString("00");
+        if(timer<=0.0)
+        {
+            SceneManager.LoadScene(1);
+        }
     }
 
 }
