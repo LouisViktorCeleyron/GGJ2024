@@ -35,7 +35,7 @@ public class TimeManager : MonoBehaviour
         timerTextGUI.text = timer.ToString("00");
         if(timer<=0.0)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
 
