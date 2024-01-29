@@ -11,9 +11,14 @@ public class RandomizeManager : MonoBehaviour
     void Start()
     {
         interactiblesTemp = new List<GameObject>();
-        for (int i = 0; i <= 7; i++) 
+        for (int i = 0; i < 6; i++) 
         {
-            interactiblesTemp.Add(interactibles[Random.Range(0,interactibles.Count)]);   
+            var t = interactibles[Random.Range(0, interactibles.Count)];
+            while (interactiblesTemp.Contains(t))
+            {
+                t = interactibles[Random.Range(0, interactibles.Count)];
+            }
+            interactiblesTemp.Add(t);   
         }
         foreach (GameObject obj in interactiblesTemp)
         {

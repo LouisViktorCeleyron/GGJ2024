@@ -963,8 +963,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Click to restart
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 864841e4fbd08634f9940799cbdc44dd, type: 2}
-  m_sharedMaterial: {fileID: -6518722287821121763, guid: 864841e4fbd08634f9940799cbdc44dd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b06aa215f6f041240aa85c8f02f33d43, type: 2}
+  m_sharedMaterial: {fileID: -6518722287821121763, guid: b06aa215f6f041240aa85c8f02f33d43, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -994,7 +994,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -3446,8 +3446,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Gamiaouver
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 864841e4fbd08634f9940799cbdc44dd, type: 2}
-  m_sharedMaterial: {fileID: -6518722287821121763, guid: 864841e4fbd08634f9940799cbdc44dd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b06aa215f6f041240aa85c8f02f33d43, type: 2}
+  m_sharedMaterial: {fileID: -6518722287821121763, guid: b06aa215f6f041240aa85c8f02f33d43, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3477,7 +3477,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 1
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -5107,6 +5107,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   systems: []
+  shouldChange: 1
+  index: 0
 --- !u!114 &1947387512
 MonoBehaviour:
   m_ObjectHideFlags: 0

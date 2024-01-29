@@ -243,6 +243,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   systems: []
+  shouldChange: 1
+  index: 2
 --- !u!114 &220042455
 MonoBehaviour:
   m_ObjectHideFlags: 0

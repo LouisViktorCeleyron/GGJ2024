@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Interactable : MonoBehaviour
+public class Interactable : MonoBehaviour, ITouchable
 {
     public UnityEvent onInteraction;
     public List<string> conditions;
@@ -41,4 +41,23 @@ public class Interactable : MonoBehaviour
         return ret == conditions.Count;
     }
 
+    public void OnTouchedDown(Vector3 touchPosition)
+    {
+    }
+
+    public void OnTouchedStay(Vector3 touchPosition)
+    {
+    }
+
+    public void OnTouchedUp()
+    {
+        if (!enabled)
+        {
+            return;
+        }
+        if (CheckCondidition())
+        {
+            onInteraction.Invoke();
+        }
+    }
 }

@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class SetCursor : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Texture2D texture;
+    private void Start()
     {
-        
+        Cursor.SetCursor(texture, Vector2.one * 0.5f, CursorMode.ForceSoftware);
     }
 
     // Update is called once per frame

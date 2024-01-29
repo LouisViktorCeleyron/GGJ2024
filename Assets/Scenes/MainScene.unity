@@ -41704,7 +41704,8 @@ MonoBehaviour:
   - {fileID: 593897919}
   - {fileID: 2099382048}
   - {fileID: 1120811696}
-  texture: {fileID: 0}
+  shouldChange: 0
+  index: 0
 --- !u!1 &760425971
 GameObject:
   m_ObjectHideFlags: 0
@@ -52064,6 +52065,7 @@ GameObject:
   - component: {fileID: 990813270}
   - component: {fileID: 990813272}
   - component: {fileID: 990813271}
+  - component: {fileID: 990813273}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -52209,6 +52211,20 @@ MonoBehaviour:
   - {fileID: 1485262166}
   - {fileID: 2026878506}
   - {fileID: 848750832}
+--- !u!114 &990813273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990813264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80ff756014579144288d98e0e1e8e814, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debug: 0
+  tc: 0
 --- !u!1 &1005039596
 GameObject:
   m_ObjectHideFlags: 0
@@ -68222,7 +68238,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   systems: []
-  texture: {fileID: 0}
+  shouldChange: 0
+  index: 0
 --- !u!95 &1240837186
 Animator:
   serializedVersion: 5
@@ -69514,7 +69531,8 @@ MonoBehaviour:
   - {fileID: 1038702441}
   - {fileID: 322949658}
   - {fileID: 294085812}
-  texture: {fileID: 0}
+  shouldChange: 0
+  index: 0
 --- !u!1 &1525934245
 GameObject:
   m_ObjectHideFlags: 0
@@ -83431,11 +83449,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5096713697982724969, guid: 84e26d55071e3874ab8b8f0ee7ec0a5a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38
+      value: -42
       objectReference: {fileID: 0}
     - target: {fileID: 5096713697982724969, guid: 84e26d55071e3874ab8b8f0ee7ec0a5a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -20.4
+      value: 1.9999943
       objectReference: {fileID: 0}
     - target: {fileID: 6366291064441958658, guid: 84e26d55071e3874ab8b8f0ee7ec0a5a, type: 3}
       propertyPath: conditions.Array.size
